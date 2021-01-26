@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://yf.htapi.pub/head/1234567890987_11.jpg" sizes="60×60" type="image/jpg"/>
+    <title>一封</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        textarea{outline:none}
+        .homeWrite{
+            height:100%;
+            /* background: rgb(253, 230, 199); */
+        }
+        .hw-top{
+            height:35px;
+            width:100%;
+            color:grey;
+            font-size:16px;
+            line-height:35px;
+            /* background-color: rgb(235, 235, 235); */
+        }
+        .hw-top-span{
+            width:90%;
+            margin:0 auto;
+        }
+        .hw-title{
+            height:45px;
+            width:90%;
+            margin: 0 auto;
+            border-bottom:3px solid rgb(182, 182, 182);
+            background-size: cover;
+            /* background-color: rgb(247, 194, 185); */
+        }
+        .hw_title{
+            font-size:20px;
+            line-height:45px;
+            font-weight: bold;
+        }
+        .hw-inp{
+            font-size:18px;
+            font-family: 微软雅黑;
+            width:70%;
+            height:30px;
+            border:none;
+            color:black;
+            margin-left:10px;
+            background:none;
+        }
+        .hw-write{
+            width:90%;
+            height:500px;
+            margin: 0 auto;
+        }
+        /* 选择音乐 */
+        audio{
+            width:100%;
+            height:40px;
+            margin-top:20px;
+        }
+        .backImg{
+            width: 96%;
+            height: 100%;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <% var music = 'https://yf.htapi.pub/music/'%>
+    <% var bgimage = 'https://yf.htapi.pub/pbgimage/'%>
+    <% var pimage = 'https://yf.htapi.pub/paper/'%>
+    <% var back%>
+    <div class="homeWrite">
+        <div class="hw-top">
+            <div class="hw-title">
+                <span class="hw_title">标题</span>
+                <input type="text" value='<%=data.Ptitle%>' class="hw-inp" />
+            </div>
+        </div>
+        <div style="height: 30px;"></div>
+        <div class="hw-write" style="font-family:<%=data.fontFamily%>;">
+            <%if(!data.ppid){%>
+                <textarea class="backImg" style="font-family:<%=data.fontFamily%>;color:<%=data.color%>;font-size:<%=data.fontsize%>px;background-image:url('<%=bgimage%><%=data.bgimage%>') ;"><%=data.Pcontent%>
+            <%}else{%>
+                <textarea class="backImg" style="font-family:<%=data.fontFamily%>;color:<%=data.color%>;font-size:<%=data.fontsize%>px;background-image:url('<%=pimage%><%=ppimage%>');"><%=data.Pcontent%>               
+            <%}%>
+                </textarea>
+        </div>
+        <%if(data.music){%>
+        <audio controls="controls" autoplay="autoplay">
+            <source src="https://yf.htapi.pub/music/1587539084068_35.mp3" type="audio/mpeg" />
+        </audio>
+        <%}%>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+
+</script>
+</html>
