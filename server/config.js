@@ -17,11 +17,11 @@ module.exports = {
 
     // 数据库配置
     mysql: {
-        host: 'rm-2zei6e8201i35l00rko.mysql.rds.aliyuncs.com',  // 本地用这个
+        host: 'localhost',  // 本地用这个
         // host: 'rm-2zei6e8201i35l00r.mysql.rds.aliyuncs.com',  // 服务器用这个
-        user: 'yf',
-        password: 'Jht952727',
-        database: 'yifeng',
+        user: 'root',
+        password: '',
+        database: 'beauty',
         port: 3306
     },
 
