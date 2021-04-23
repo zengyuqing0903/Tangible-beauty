@@ -1,0 +1,209 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+textarea{
+    list-style: none;
+}
+.toge-body{
+    width:100%;
+    height: 100%;
+    margin:0 auto;
+}
+
+.ge-body{
+    width:100%;
+    height: 100%;
+    margin:0 auto;
+    /* background-color: rgba(240, 240, 240, 0.381); */
+
+}
+.ge-top{
+    height:30px;
+    width:100%;
+    line-height:30px;
+}
+#ge-cancel{
+    padding-left: 5%;
+    color: gray;
+}
+#ge-save{
+    float: right;
+    padding-right: 5%;
+    color: gray;
+
+}
+.ge-title{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    padding-left: 5%;
+    font-size:19px;
+    font-weight:bold;
+    color:black;
+    margin-bottom: 3%;
+    border-bottom: 1px solid rgb(192, 190, 190);
+}
+#ge-inp-title{
+    background: none;
+    border:none;
+}
+.ge-cont{
+    padding-left: 5%;
+    color:black;
+    font-size: 17px;
+}
+.ge-content{
+    width:90%;
+    height: 500px;
+    background: none; 
+    font-size: 16px;
+    margin: 0 auto;
+    color:black;
+}
+.ge-bottom{
+    height:40px;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    background-color: rgb(248, 245, 245);
+    z-index:1;
+    border-top:1px solid rgb(247, 198, 152);
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.ge-bottom div{
+    width:32px;
+    height:32px;
+}
+#ge-content{
+    width:100%; 
+    height:100%;
+    background: none;
+    border: none;
+}
+
+
+/* 添加收信人 */
+.add-top{
+    width:100%;
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    height: 55px;
+    padding-top: 5%;
+}
+/* .add-back{
+    position:fixed;
+    left:20px;
+} */
+.add-title{
+    font-size:18px;
+    color:black;
+    
+
+    
+}
+.add-body{
+    height:450px;
+    width:300px;
+    /* background-color: tomato; */
+    margin:0 auto;
+    text-align: center;
+    margin-top:80px;
+}
+.add-img{
+    width:300px;
+    height:300px;
+    border:1px solid rgb(185, 185, 185);
+    margin-bottom:25px;
+    background:url(../imgs/Home/add.png) no-repeat center;
+    z-index:1;
+}
+.add-label{
+    position:fixed;
+    width:300px;
+    height:300px;
+    opacity:0;
+    background-color: tomato;
+}
+
+
+
+.ant-upload.ant-upload-select-picture-card {
+  
+    width: 254px!important;
+    height: 254px!important;
+   
+}
+#add-btn{
+    height:40px;
+    background: grey;
+    color:white;
+    font-size:16px;
+    width:300px;
+    border-radius:45px;
+    margin-top:30px;
+}
+#add-name{
+    width:300px;
+    height:30px;
+}
+#add-file{
+    display:none;
+}
+/* 大框 */
+.am-image-picker-list .am-image-picker-upload-btn {
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1PX solid #ddd;
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+
+}
+
+.am-image-picker-list {
+    /* padding: 9px 8px 0; */
+    padding: 0;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+}
+
+.am-flexbox {
+    text-align: left;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+}
+.am-image-picker-list .am-flexbox {
+    /* margin-bottom: 6px; */
+    height: 200px;
+    width: 200px;
+}
+.am-image-picker-list .am-image-picker-item .am-image-picker-item-content {
+    height: 200px;
+    width: 200px;
+    border-radius: 3px;
+    /* background-size: cover; */
+}
+.am-image-picker-list .am-image-picker-item {
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    width: 200px; 
+    height: 200px;
+}
+.am-list-item{
+    background-color:transparent
+}
+.insertimg{
+    width: 47%;
+    height: 30%;
+    float: left;
+    margin-right: 1%;
+    border: 1px;
+}

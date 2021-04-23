@@ -1,0 +1,29 @@
+.top{
+    height:200px;
+    width:100%;
+    background-size:cover;
+    position:fixed;
+    top:0;
+    z-index:1;
+    text-align: center;
+    /* line-height: 100px; */
+}
+.touxiang{
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    border: 1px solid #ddd;
+    margin-top: 50px;
+}
+.fan{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 15px;
+ 
+}
+.signature{
+    height: 50px;
+    margin-top: 45px;
+
+}

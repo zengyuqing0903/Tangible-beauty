@@ -1,0 +1,111 @@
+/* 登录 */
+.login{
+    width:80%;
+    height:500px;
+    margin:0 auto;
+    margin-top:120px;
+    /* background-color: tomato; */
+}
+.login input{
+    text-align: center;
+    height:40px;
+    width:96%;
+    padding:5px;
+    margin:0 auto;
+    border: none;
+    background-color: rgb(219, 219, 219);
+    border-radius:30px;
+}
+.subBtn{
+    width: 100%;
+    height:40px;
+    font-size:16px;
+    background-color: grey;
+    border:1px solid rgb(243, 191, 148);
+    border-radius:10px;
+    color: rgb(253, 182, 154);
+}
+.l-mid{
+    color: grey;
+    width:90%;
+    margin:0 auto;
+    height:25px;
+    line-height:25px;
+    margin-top:10px;
+    /* background-color: pink; */
+}
+#forget{
+    float: left;
+}
+#duanxin{
+    float:right;
+}
+.l-bottom{
+    height:48px;
+    width:90%;
+    margin:0 auto;
+    /* background-color: grey; */
+    margin-top:80px;
+}
+.l-img{
+    height:48px;
+    width:48px;
+    /* background-color: hotpink; */
+}
+
+
+/* 注册 */
+.register{
+    height:500px;
+    margin:0 auto;
+    width:90%;
+    /* background-color: hotpink; */
+}
+.back{
+    margin-top:5px;
+    width:100%;
+    height:25px;
+    background-color: white;
+}
+.re-body{
+    width:100%;
+    height:300px;
+    /* background-color: pink; */
+}
+.re-Btn{
+    width:100%;
+    height:50px;
+    /* background-color: pink; */
+}
+
+/* 短信登录 */
+.msg-top{
+    width:100%;
+    height:30px;
+    background-color: rgb(190, 190, 190);
+}
+.msg{
+    width:90%;
+    height:300px;
+    margin:0 auto;
+    margin-top:100px;
+    /* background-color:grey; */
+}
+.msg input{
+    text-align: center;
+    height:45px;
+    width:96%;
+    padding:5px;
+    margin:0 auto;
+    border: none;
+    background-color: rgb(219, 219, 219);
+    border-radius:30px;
+    font-size:15px;
+}
+.pwdLogin{
+    float:right;
+    line-height:30px;
+    font-size:16px;
+    margin-right:10px;
+    color:rgb(78, 78, 78);
+}

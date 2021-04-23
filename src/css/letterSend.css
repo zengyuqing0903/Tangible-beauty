@@ -1,0 +1,18 @@
+.am-list-item .am-input-item .am-list-item-middle{
+    height:60px;
+    width:100%;
+    line-height:60px;
+    padding: 0px;
+    /* padding-left:20px; */
+    font-size:18px;
+    background-color: #f2f2f2;
+
+    
+}
+.am-list-item .am-input-item {
+    padding-left: 0;
+}
+.am-list-item .am-input-label.am-input-label-5{
+    /* font-size:18px; */
+    width: 50px;
+}

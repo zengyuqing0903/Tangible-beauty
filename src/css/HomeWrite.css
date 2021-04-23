@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.homeWrite{
+    height:100%;
+    /* background: rgb(253, 230, 199); */
+}
+.hw-top{
+    height:35px;
+    width:100%;
+    color:grey;
+    font-size:16px;
+    line-height:35px;
+    /* background-color: rgb(235, 235, 235); */
+}
+.hw-top-span{
+    width:90%;
+    margin:0 auto;
+}
+.hw-title{
+    height:45px;
+    width:90%;
+    margin: 0 auto;
+    border-bottom:3px solid rgb(182, 182, 182);
+    background-size: cover;
+    /* background-color: rgb(247, 194, 185); */
+}
+.hw_title{
+    font-size:20px;
+    line-height:45px;
+    font-weight: bold;
+}
+.hw-inp{
+    font-size:16px;
+    width:70%;
+    height:30px;
+    border:none;
+    color:black;
+    margin-left:10px;
+    background:none;
+}
+.hw-write{
+    width:90%;
+    height:450px;
+    margin: 0 auto;
+    /* background-color: blanchedalmond; */
+}
+.hw-to{
+    width:90%;
+    margin : 0 auto;
+    height:30px;
+    line-height:30px;
+    font-size:15px;
+}
+.hw-bottom{
+    height:40px;
+    width:100%;
+    /* background-color:rgb(226, 226, 226); */
+    position:fixed;
+    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:1px solid gray;
+}
+.toElse{
+    float: right;
+    height:30px;
+    line-height:30px;
+    font-size:15px;
+    color:grey;
+    width:60px;
+    background:none;
+    border: none;
+}
+.selectTo{
+    background:white;
+    width:60px;
+    text-align: center;
+    position: absolute;
+    z-index:1;
+    right:5%;
+}
+.selectTo li:active{
+    background-color: rgb(238, 238, 238);
+}
+
+
+/* 信纸选择 */
+.back-top{
+    height:40px;
+    width:100%;
+    font-size:18px;
+    padding-left:10px;
+    line-height:40px;
+    color:white;
+    background-color: rgb(82, 82, 82);
+}
+.back-img{
+    height:100%;
+    width:100%;
+    /* display:flex;
+    justify-content:space-around; */
+    background-color: pink;
+}
+.back-imgBox{
+    float: left;
+    height:130px;
+    margin:1% 1%;
+    width:23%;
+    background-color: lightgrey;
+    border:1px solid grey;
+    background-size: cover;
+    position: relative;
+}
+#vipImage{
+    position:absolute;
+    width:30px;
+    height:20px;
+    text-align: center;
+    background-color: red;
+    color:white;
+    right:0;
+}
+/* 音乐 */
+.audio{
+    background-color: pink;
+    width:100%;
+    height: 30px;
+}
+
+/* 字体颜色 */
+#color{
+    background-color: rgb(255, 255, 255,0.9);
+    position:absolute;
+    right:0;
+    bottom:200px;
+    left:0;
+    width:280px;
+    height:300px;
+    margin:  auto;
+    padding:10px;
+    border:1px solid lightgrey;
+    border-radius:10px;
+    color:black;
+}
+#color>ul{
+    display: flex;
+    justify-content: space-around;
+}
+#color>li{
+    float: left;
+    margin-top:6px;
+}
+.s-color{
+    height:25px;
+    width:25px;
+    border-radius:45px;
+}
+.fontStyle{
+    width:120px;
+    height:160px;
+    box-sizing: border-box;
+    border:1px solid rgb(145, 145, 145);;
+    float: left;
+}
+#fontFamily{
+
+}
+#fontSize{
+    position: absolute;
+    right: 10px;
+}
+#hw-ff{
+    box-sizing: border-box;
+    width: 100%;
+    background-color:rgb(231, 231, 231);
+    border:1px solid rgb(255, 205, 139);
+}
+.ff-op{
+    /* background-color: greenyellow; */
+    height:114px;
+    overflow: scroll;
+}
+.ff-op li{
+    padding:1px 0;
+}
+#fontBtn{
+    position: relative;
+    top:180px;
+    height:40px;
+    /* background-color: greenyellow; */
+}
+#font-cancle{
+    width:100px;
+    height:35px;
+    background-color: transparent;
+    border:1px solid rgb(161, 161, 161);
+    border-radius:10px;
+    position: absolute;
+    left:10px;
+    font-weight: bold;
+}
+#font-sure{
+    width:100px;
+    height:35px;
+    background-color: transparent;
+    border:1px solid rgb(161, 161, 161);
+    border-radius:10px;
+    position: absolute;
+    right:10px;
+    font-weight: bold;
+}
+
+
+/* 选择音乐 */
+
+.Music{
+    width: 70%;
+    height: 200px;
+    background-color: white;
+    border:1.5px solid gray;
+    border-radius:10px;
+    z-index:9;
+    position: absolute;
+    bottom:230px;
+    left:55px;
+    padding-top:3px;
+}
+#MusicFile{
+    display:none;
+}
+#sp-addMusci{
+    border:1px solid grey;
+    background-color: rgb(238, 238, 238);
+    padding:3px;
+    margin-right:5px;
+}
+.Music span{
+    margin-top:20px;
+    margin-left:20px;
+}
+audio{
+    width:100%;
+    height:40px;
+    margin-top:30px;
+}
+.music-up{
+    height:40px;
+    width:100%;
+    /* background-color: pink; */
+    margin-top:20px;
+}
+.music-btn{
+    width:80px;
+    height: 30px;
+    border:1px solid rgb(165, 165, 165);
+    background-color: rgb(204, 199, 199);
+    color:rgb(85, 84, 84);
+    margin-left:30px;
+}

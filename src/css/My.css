@@ -1,0 +1,217 @@
+.mygd{
+    height: 16em;
+    width: 100%;
+    /* background-color: pink; */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.myfun{
+    height: 500px;
+    position: relative;
+    top: 16em;
+    width: 100%;
+}
+#my-info{
+    height: 16em;
+    position: relative;
+    top:0;
+    left:0;
+}
+.myifbg {
+    width: 100%;
+    height: 100%;
+    z-index:1;
+}
+.portrait{
+    position: absolute;
+    left:1.5em;
+    top: 6em;
+    height: 5.5em;
+    width: 5.5em;
+    border-radius: 50%;
+    z-index:2;
+}
+.myinfospan{
+    position: absolute;
+    /* width: 47%; */
+    left: 33%;
+    /* background-color: pink; */
+    bottom: 44%;
+    font-size:20px;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+}
+.mysig{
+    position: absolute;
+    height: 12%;
+    line-height: 85%;
+    width: 47%;
+    left: 33%;
+    bottom: 28%;
+    font-size: 1.2em;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+    padding-left: 5%;
+    background: url('../imgs/Home/signature(3).png') no-repeat;
+    padding-bottom: 5%;
+}
+.mytitle{
+    position: absolute;
+    left: 45%;
+    top: 8%;
+    height: 3.5em;
+    font-size: 1.3em;
+}
+.myinfodiv{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3.5em;
+}
+#my-info div ul li{
+    height: 3.5em;
+    width: 33.3%;
+    float:left;
+    background-color:white;
+    text-align: center;
+}
+#my-info div ul li span{
+    display: block;
+    margin-top: 0.25em;
+}
+/* —————————————my-setting——————————————————*/
+
+.my-unlogin{
+    height: 10em;
+    width: 100%;
+    text-align: center;
+}
+.my-unlogin button{
+    margin-top: 2em;
+    height: 3em;
+    width: 12em;
+    background-color: black;
+    border-radius: 5%;
+    color:white;
+    font-size: 1em;
+}
+
+/* ---------------------collection------------------------- */
+.col-tab{
+    height: 3em;
+    line-height: 3em;
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+    color:white; 
+    background-color: black;
+    /* color:black;
+    background-color:whitesmoke; */
+    position: relative;
+
+}
+/* 信件样式-recover-collection */
+.my-text{
+    height: 8em;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    border-bottom: 0.5px solid lightgrey;
+}
+.my-user{
+    position: absolute;
+    left:3%;
+    top:9%;
+    width:20%;
+    font-size:1.3em;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+}
+.my-date{
+    top:9%;
+    position: absolute;
+    color:lightgrey;
+    right:5%;
+}
+.my-title{
+    left:3%;
+    top:44%;
+    width: 70%;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+    position: absolute;
+}
+.my-content{
+    position: absolute;
+    left:3%;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+    top:70%;
+    width: 82%;
+    color:rgb(186, 184, 184);
+}
+/* ----------------Message.js------------------------与Articalbun共用------------------------------------------------ */
+.me-text{
+    position: relative;
+    height: 25vw;
+}
+.me-title{
+    position: absolute;
+    left:0%;
+    top:15%;
+    font-size: 6vw;
+}
+.me-date{
+    position: absolute;
+    right:5%;
+    top:20%;
+    color:grey;
+}
+.me-content{
+    position: absolute;
+    width: 92vw;
+    left:0%;
+    top:60%;
+    color:grey;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+}
+/* ----------------Myedit.js--------------------------------------------------------------------------- */
+.ed-img{
+    height: 28vw;
+    width: 28vw;
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    margin: 5% 0;
+}
+/* ----------------myorder.js---------------------------------------------------------------- */
+.mo-bk{
+    height: 15em;
+    width: 100%;
+    margin: 1em 0;
+    padding:40px 60px;
+    background-color: black;
+}
+.motit{
+    color: white;
+    position: absolute;
+    left: 38%;
+    top: 34%;
+    height: 3.5em;
+    font-size: 3.3em;
+    z-index: 1;
+}
+#myVip{
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    background-color: red;
+    border:1px solid yellow;
+    position: relative;
+    text-align: center;
+    line-height:15px;
+    font-weight: bold;
+    font-size:11px;
+    color: yellow;
+    left:75px;
+    bottom:80px;
+    z-index:2;
+}

@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+input{
+    background: none; 
+    outline: none; 
+    border: none;
+
+}
+
+.member a{
+    text-decoration:none;
+}
+.member Link{
+    text-decoration:none;
+}
+.member ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.member p{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+.together-navback{
+    background-color:#fff;
+    color:#000;
+    height:80px;
+    border-bottom: 1px solid rgb(209, 203, 203);
+    padding-top: 20px;
+    position:relative;
+    /* background-color: red; */
+}
+/* .together-img{
+    width:40px;
+    height: 20px;
+    position:absolute;
+    line-height: 40px;
+    top:30%;
+    right:5%;
+} */
+.together-img{
+    width:22px;
+    height: 22px;
+    position:absolute;
+    line-height: 40px;
+    top:50%;
+    right:5%;
+}
+.member-return{
+    width:20px;
+    position: absolute;
+    top:50%;
+    left:5%;
+    color: rgb(90, 84, 84);
+}
+
+/* 邀请信息页面 */
+.together-navback1{
+    background-color:#fff;
+    color:#000;
+    height:60px;
+    line-height: 60px;
+    border-bottom: 1px solid rgb(209, 203, 203);
+    position:relative;
+    /* background-color: red; */
+}
+.member-return1{
+    width:20px;
+    position: absolute;
+    top:40%;
+    left:5%;
+    color: rgb(156, 154, 154);
+}
+.lba{
+    width: 100%;
+    height: 65px;
+    padding-left: 18px;
+    font-size: 18px;
+    color: black;
+    background-color:rgba(241, 241, 241, 0.952);
+    border-bottom:0.3px solid rgb(128, 125, 125);
+
+}
+.lbb{
+    width: 100%;
+    height: 325px;
+    padding: 18px;
+    font-size: 18px;
+    color: black;
+    background-color:rgba(241, 241, 241, 0.952);
+
+}
+.la{
+    height: 255px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(241, 241, 241, 0.952);
+    padding:20px;
+
+}
+.lb{
+    height: 65px;
+    padding-left: 10px;
+    background-color: rgba(241, 241, 241, 0.952);
+    border-bottom:0.3px solid rgb(128, 125, 125);
+    /* margin-bottom: 5px; */
+}
+.membtn{
+    margin-top: 50px;
+    border: 1px solid rgb(128, 125, 125);
+}
+.btnbox{  
+    width: 80%;
+    margin: 0 auto;
+}

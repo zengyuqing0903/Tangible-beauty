@@ -21,7 +21,7 @@ module.exports = {
         // host: 'rm-2zei6e8201i35l00r.mysql.rds.aliyuncs.com',  // 服务器用这个
         user: 'root',
         password: '',
-        database: 'beauty',
+        database: 'zym',
         port: 3306
     },
 

@@ -17,6 +17,7 @@ const { getToken, checkToken } = require('../src/token');
  */
 router.get('/recommend',function(req,res,next){
     let token = req.header('token');
+    let {recommend} = req.query;
     checkToken(token, (result) => {
         if (result.status !== 0) {
             res.json(result);
@@ -171,11 +172,13 @@ router.get('/natural',function(req,res,next){
  */
 router.get('/browse',function(req,res,next){
     let {pid} = req.query;
+    let token = req.header('token');
     checkToken(token, (result) => {
         if (result.status !== 0) {
+            console.log(result)
             res.json(result);
         } else {
-            runSql(`select * from postcontent where pid=?`,[pid],(result)=>{
+            runSql(`select postcontent.*,user.uname,user.uimage from postcontent,user where pid=? and (user.uid=postcontent.uid)`,[pid],(result)=>{
                 res.json(result);
             })
         }
@@ -191,6 +194,7 @@ router.get('/browse',function(req,res,next){
  */
 router.get('/islike',function(req,res,next){
     let {pid} = req.query;
+    let token = req.header('token');
     checkToken(token, (result) => {
         if (result.status !== 0) {
             res.json(result);
@@ -288,7 +292,7 @@ router.get('/isattention',function(req,res,next){
         if (result.status !== 0) {
             res.json(result);
         } else {
-            let fanUid = result.data.uid;
+            let fanUid = 2;
             runSql(`select attention from attention where uid=? and fanuid=?`,[uid,fanUid],(result)=>{
                 let attenton = result.data.length;
                 res.json(attenton);//0 -- 没关注                
@@ -394,6 +398,27 @@ router.post('/collect',function(req,res,next){
     })
 })
 /**
+ * 获取收藏数
+ * 请求方式：
+ *      GET
+ * 接收参数：
+ *      pid：作品id
+ * 
+ */
+router.get('/collectnum',function(req,res,next){
+    let {pid} = req.query;
+    let token = req.header('token');
+    checkToken(token, (result) => {
+        if (result.status !== 0) {
+            res.json(result);
+        } else {
+            runSql(`select count(uid) as num from collect where pid=?`,[pid],(result)=>{
+                res.json(result.data);
+            })
+    }
+    })
+})
+/**
  * 取消收藏
  * 请求方式：
  *      POST
@@ -424,6 +449,7 @@ router.post('/collect',function(req,res,next){
  */
  router.get('/iscollect',function(req,res,next){
     let {pid} = req.query;
+    let token = req.header('token');
     checkToken(token, (result) => {
         if (result.status !== 0) {
             res.json(result);
@@ -445,6 +471,7 @@ router.post('/collect',function(req,res,next){
  */
 router.post('/deleteworks',function(req,res,next){
     let {pid} = req.body;
+    let token = req.header('token');
     checkToken(token, (result)=>{
         if (result.status !== 0) {
             res.json(result);
@@ -458,6 +485,25 @@ router.post('/deleteworks',function(req,res,next){
                 })
             })
                 
+        }
+    })
+})
+/**
+ * 搜索内容
+ * 接受参数：
+ *      uname:查询用户名
+ * 返回参数：
+ */
+router.get('/search',function(req,res,next){
+    let {tag} = req.query;
+    let token = req.header('token');
+    checkToken(token, (result)=>{
+        if (result.status !== 0) {
+            res.json(result);
+        } else {
+            runSql(`select postcontent.*,user.uname,user.uimage from user,postcontent where ptype=? and (postcontent.uid=user.uid)`,[tag],(result)=>{
+                res.json(result);
+            })
         }
     })
 })

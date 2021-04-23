@@ -1,0 +1,120 @@
+.v-top{
+    height:40px;
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+    color: white;
+    font-size:16px;
+    line-height:40px;
+    position: relative;
+}
+#v-back{
+    width:24px;
+    position:absolute;
+    left:10px;
+    top:0;
+    bottom:0;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.v-mid{
+    height:140px;
+    /* background-color: rgb(238, 193, 161); */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom:5px solid rgb(216, 216, 216);
+}
+.v-li{
+    display: inline-block;
+    height:100px;
+    width:100px;
+    background-color: rgb(255, 255, 255);
+    border-radius:10px;
+    text-align: center;
+    border:1.5px dashed rgb(122, 119, 120);
+    padding-top:8px;
+    font-weight: bold;
+}
+.v-li img{
+    width:55px;
+    margin-bottom:5px;
+}
+.v-bot li{
+    position: relative;
+    height:70px;
+    /* background-color: pink; */
+    padding-top:13px;
+    border-bottom:1px solid rgb(209, 206, 206);
+}
+.v-img{
+    width:50px;
+    height:50px;
+    background-color: rgb(255, 237, 78);
+    border-radius:50%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.v-img img{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+}
+.v-bot p{
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    margin-left:75px;
+}
+.v-pay{
+    background-color: rgba(59, 59, 59, 0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin: auto;
+}
+.v-payWay{
+    height:150px;
+    width:85%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    border-radius:10px;
+    padding:10px;
+}
+.pay-top{
+    text-align: center;
+    color: rgb(168, 168, 168);
+    position: relative;
+}
+#pay-close{
+    width:15px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+.pay-mid{
+    /* background-color: pink; */
+    height:80px;
+    display: flex;
+    justify-content: space-around;
+}
+.pay-mid div{
+    width:80px;
+    height:80px;
+    /* background-color: yellow; */
+    text-align: center;
+    padding-top:5px;
+}

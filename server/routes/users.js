@@ -190,8 +190,10 @@ router.post('/register', function (req, res, next) {
  */
 router.post('/login', function (req, res, next) {
     let { account, type, password } = req.body;
+    console.log(account,type,password)
     if (type === 'phone' || type === 'email') {
         runSql(`select uid,upassword from user where u${type} = ?`, [account], (result) => {
+            console.log(result);
             if (result.status === 0) {
                 if (result.data.length === 0) {
                     let jsonData = {

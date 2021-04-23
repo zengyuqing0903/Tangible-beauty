@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin:0;
+}
+ul,li{
+    list-style:none;
+}
+
+.cont-back{
+    background-color:white;
+    color:#000;
+    height:55px;
+    padding-top: 3%;
+    text-align: center;
+    border-bottom: 0.5px solid rgb(104, 104, 102);
+    width: 100%;
+    position:fixed;
+    z-index:1;
+}
+.cont-span{
+    height: 25px;
+    width: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgba(107, 109, 112, 0.719);
+}
+/* 正文部分 */
+.cont-body{
+    height: 100%;
+    position: relative;
+    top: 58px;
+    width: 100%;
+    background-color:rgba(247, 243, 243, 0.945);
+}
+.cont-block{
+    width: 95%;
+    height: 100%;
+    padding:15px 10px 15px 10px;
+    margin: 0 auto;
+    background-color:rgba(253, 252, 252, 0.753);
+}
+.cont-title{
+    width: 100%;
+    height: 57px;
+    margin-bottom: 7px;
+    border-bottom:0.1px solid rgb(212, 210, 210);
+
+}
+.cont-touimg{
+    width: 50px;
+    height:50px ;
+    margin-right: 15px;
+    border-radius: 50px;
+    float: left;
+}
+.cont-name{
+    width: 75%;
+    height: 28px;
+    font-size:17px;
+    float: left;
+}
+.cont-time{
+    width: 60%;
+    height: 20px;
+    font-size:10px;
+    /* float: left; */
+
+}
+.cont-img{
+    width: 100%;
+    height:100% ;
+    border-radius: 5px;
+
+}
+.cont-cont{
+    width: 100%;
+    margin-top: 15px;
+
+}
+/* 评论 */
+.cont-bottom{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color:rgba(253, 252, 252, 0.753);
+}
+.cont-bot1{
+    width: 95%;
+    height: 50px;
+    padding-left:5px;
+    position: relative;
+    border-bottom:0.1px solid rgb(212, 210, 210);
+    margin: 0 auto;
+
+}
+.cont-zan{
+    width: 20%;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    float: left;
+    
+}
+.cont-comment{
+    width: 30%;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    float: left;
+}
+
+.cont-shoucang{
+    width: 11%;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    float: left;
+}
+.sc{
+    position: absolute;
+    right: 110px;
+}
+/* .cont-bot2{
+ 
+} */
+.cont-btmtab{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    border-top:0.1px solid rgb(212, 210, 210);
+    background-color:rgba(253, 252, 252, 0.753);
+}
+.cont-tab{
+    width: 33%;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}

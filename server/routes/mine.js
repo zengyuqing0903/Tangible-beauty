@@ -12,10 +12,9 @@ const { getToken, checkToken } = require('../src/token');
  *      
  * 返回参数：
  */
- router.get('/', function (req, res, next) {
+ router.get('/me', function (req, res, next) {
     let token = req.header('token');
     checkToken(token, (result) => {
-        let uid = result.data.uid;
         if (result.status !== 0) {
             res.json(result);
         } else {

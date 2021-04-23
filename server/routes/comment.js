@@ -17,6 +17,7 @@ const { request } = require('../app');
  */
 router.get('/commentnum',function(req,res,next){
     let {pid} = req.query;
+    let token = req.header('token');
     checkToken(token, (result) => {
         if (result.status !== 0) {
             res.json(result);
@@ -39,16 +40,17 @@ router.get('/commentnum',function(req,res,next){
  */
 router.get('/getcomment',function(req,res,next){
     let {pid} = req.query;
-    // checkToken(token, (result) => {
-    //     if (result.status !== 0) {
-    //         res.json(result);
-    //     } else {
+    let token = req.header('token');
+    checkToken(token, (result) => {
+        if (result.status !== 0) {
+            res.json(result);
+        } else {
             runSql(`select user.uname,user.uimage,comment.*  from user,comment where pid=? and (comment.uid=user.uid)`,[pid],(result)=>{
                 console.log(result);
                 res.json(result);
             })
-    //     }
-    // })
+        }
+    })
 })
 /**
  * 发布评论
@@ -63,6 +65,7 @@ router.get('/getcomment',function(req,res,next){
  */
 router.post('/postcomment',function(req,res,next){
     let {pid,touid,comment,comday} = req.body;
+    let token = req.header('token');
     checkToken(token, (result) => {
         if (result.status !== 0) {
             res.json(result);

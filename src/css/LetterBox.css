@@ -1,0 +1,168 @@
+a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}
+/* -------列表页---------- */
+.active{
+    display: block;
+}
+.activeno{
+  display: none;
+}
+.lb-text{
+    height: 8em;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+}
+.lb-user{
+    position: absolute;
+    width: 40%;
+    left:23%;
+    top:14%;
+    font-size:1.2em;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+}
+.lb-date{
+    top:16%;
+    position: absolute;
+    right:5%;
+    color:lightgrey;
+}
+.lb-title{
+    position: absolute;
+    top: 45%;
+    width: 70%;
+    left:23%;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+    font-size:0.9em;
+}
+.lb-content{
+    position: absolute;
+    left:23%;
+    top:65%;
+    width: 72%;
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+    font-size:0.9em;
+    color:rgb(186, 184, 184);
+
+}
+/* ----------------Letter页面-------------------------------------------------------- */
+
+.lt{
+    /* background-color: rgb(250, 250, 250); */
+    position: relative;
+    height: 37.5em;
+    width: 100%;
+
+}
+.lt-title{
+    width: 100%;
+    background-color: #fff;
+    font-size: 1.7em;
+    padding:0.5em 0.8em;
+}
+.lt-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.lt-span{
+    position: absolute;
+    left: 0;
+    top:0;
+    padding:0.5em 0.8em;
+    font-size: 1.3em;
+    z-index:1;
+}
+.lt-img{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+}
+.col-tab{
+    height: 3em;
+    line-height: 3em;
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+    color:white;
+    background-color: black;
+    position: relative;
+}
+/* --------------------补充更改------------------------ */
+.hw-top{
+    height:35px;
+    width:100%;
+    color:grey;
+    font-size:16px;
+    line-height:35px;
+    /* background-color: rgb(235, 235, 235); */
+}
+.hw-top-span{
+    width:90%;
+    margin:0 auto;
+}
+.hw-title{
+    height:45px;
+    width:90%;
+    margin: 0 auto;
+    border-bottom:3px solid rgb(182, 182, 182);
+    background-size: cover;
+    /* background-color: rgb(247, 194, 185); */
+}
+.hw_title{
+    font-size:20px;
+    line-height:45px;
+    font-weight: bold;
+}
+.hw-inp{
+    font-size:16px;
+    width:70%;
+    height:30px;
+    border:none;
+    color:black;
+    margin-left:10px;
+    background:none;
+}
+.hw-write{
+    width:90%;
+    height:450px;
+    margin: 0 auto;
+    /* background-color: blanchedalmond; */
+}
+.hw-to{
+    width:90%;
+    margin : 0 auto;
+    height:30px;
+    line-height:30px;
+    font-size:15px;
+}
+.hw-bottom{
+    height:40px;
+    width:100%;
+    /* background-color:rgb(226, 226, 226); */
+    position:fixed;
+    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:1px solid gray;
+}
