@@ -49,7 +49,14 @@ export default class Care extends Component {
             ]       
         }
     }   
-    
+    componentDidMount(){
+        this.$api.attentionWorks().then(res=>{
+            console.log(res.data)
+            this.setState({
+                data:res.data.data
+            })
+        })
+    }
     render() {
         //console.log(this.state.toUid);
         return (
@@ -62,17 +69,17 @@ export default class Care extends Component {
                 <div className="home-body">
                 <div style={{ display: 'flex',flexWrap:" wrap" ,alignItems: 'center', justifyContent: 'center', height: '420px'}}>
                                 {this.state.data.map((val)=> (                           
-                                    <Link to={"/contonent/"+val.Cid}>
+                                    <Link to={"/Home/content/"+val.pid}>
                                     {/* <Link to={"/contonent/"+val.Tid} style={{color:"white"}}> */}
 
                                     <div key={val} className="home-block">  
-                                        <img src={require("../imgs/WriteTogether/toge2.jpg")} alt="" className="home-bacimg"/>
+                                        <img src={"http://localhost:3000/image/"+val.pimage+".jpg"} alt="" className="home-bacimg"/>
                                         <div className='home-down'>
-                                            <div className="home-title">{val.Ctitle}</div>                            
+                                            <div className="home-title">{val.ptitle}</div>                            
                                             <div className="home-btm">
                                                 <div className="home-btm-left">
-                                                    <img src={require("../imgs/WriteTogether/toge1.jpg")} alt="" className="home-btm-left-img"/>
-                                                    <span className="home-btm-left-name">{val.Cname}</span>
+                                                    <img src={"http://localhost:3000/head/"+val.uimage+".jpg"} alt="" className="home-btm-left-img"/>
+                                                    <span className="home-btm-left-name">{val.uname}</span>
                                                 </div>
                                                 
                                             </div>                            

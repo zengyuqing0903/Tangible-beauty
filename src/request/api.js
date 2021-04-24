@@ -16,14 +16,20 @@ const api = {
     commentnum:p=>get('comment/commentnum',p),
     getcomment:p=>get('comment/getcomment',p),
     search:p=>get('featured/search',p),
+    //关注
+    attentionWorks:p=>get('featured/attentionWorks',p),
     //我的页面
-    mine:p=>get('/mine/me',p),
+    mine:p=>get('mine/',p),
+    getfans:p=>get('mine/fans',p),
+    getattention:p=>get('mine/attentions',p),
 
     isfollow:p=>get('featured/isattention',p),
     islike:p=>get('featured/islike',p),
 
 
 
+
+    
     headimg: p => post('image/head',p),
 
     // // lxc
@@ -48,8 +54,8 @@ const api = {
     getgrade:p=>get('mine/getgrade',p),
     attention:p=>post('mine/attention',p),
     delattention:p=>post('mine/delattention',p),
-    getfans:p=>get('mine/fans',p),
-    getattention:p=>get('mine/attentions',p),
+
+ 
     attentionlist:p=>get('mine/attentionlist',p),
     fanslist:p=>get('mine/fanslist',p),
     myself:p=>get('mine/myself',p),
