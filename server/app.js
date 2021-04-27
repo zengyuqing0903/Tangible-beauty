@@ -8,23 +8,11 @@ const cors = require('cors');
 
 // var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var pLetterRouter = require('./routes/pLetter');
-var tLetterRouter = require('./routes/tLetter');
-var sLetterRouter = require('./routes/showLetter');
+var featuredRouter = require('./routes/featured');
+var publishRouter = require('./routes/publish');
+var commentRouter = require('./routes/comment');
 var mineRouter = require('./routes/mine');
-var mailboxRouter = require('./routes/mailbox');
-var imageRouter = require('./routes/image');
-var adminLogin = require('./routes/adminlogin');
-var adminManager = require('./routes/adminManager');
-var userManager = require('./routes/userManager');
-var paperManager = require('./routes/paperManager');
-var countRouter = require('./routes/adminStatistics');
-var adminLetterManage = require('./routes/adminletterManage');
-var musicRouter = require('./routes/music');
-var openRouter = require('./routes/openletter');
-var signRouter = require('./routes/signIn');
-var helpRouter = require('./routes/help');
-var openManager = require('./routes/openManager')
+
 var app = express();
 
 // view engine setup
@@ -45,23 +33,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use('/', indexRouter);
 app.use('/v1/users', usersRouter);
-app.use('/v1/private', pLetterRouter);
-app.use('/v1/showletter', sLetterRouter);
-app.use('/v1/together',tLetterRouter)
+app.use('/v1/featured',featuredRouter);
+app.use('/v1/publish',publishRouter);
+app.use('/v1/comment',commentRouter);
 app.use('/v1/mine',mineRouter);
-app.use('/v1/mailbox',mailboxRouter);
-app.use('/v1/image',imageRouter);
-app.use('/v1/adminlogin',adminLogin);
-app.use('/v1/adminmanager',adminManager);
-app.use('/v1/usermanager',userManager);
-app.use('/v1/papermanager',paperManager);
-app.use('/v1/analy',countRouter);
-app.use('/v1/adminletman',adminLetterManage);
-app.use('/v1/music',musicRouter);
-app.use('/v1/public',openRouter);
-app.use('/v1/signIn',signRouter);
-app.use('/v1/help',helpRouter);
-app.use('/v1/openManager',openManager);
 // error handler
 app.use(function(err, req, res, next) {
     // set locals, only providing error in development
