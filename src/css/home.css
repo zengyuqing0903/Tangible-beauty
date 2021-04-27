@@ -108,3 +108,17 @@ li{
     position: absolute;
     right: 0;
 }
+.sig-top{
+    background-color: white;
+    color: #000;
+    height: 55px;
+    padding-top: 3%;
+    text-align: center;
+    border-bottom: 0.5px solid rgb(104, 104, 102);
+    width: 100%;
+    position: fixed;
+    z-index: 1
+}
+.sig-back{
+    margin-left: 20px;
+}

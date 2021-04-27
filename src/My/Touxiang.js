@@ -16,7 +16,7 @@ export default class Touxiang extends Component {
             this.setState({
                 arr:res.data.data
             })
-            console.log(this.state.arr[0].Uimage)
+            console.log(this.state.arr[0].uimage)
         })
         if (this.props.location.state) {
 
@@ -51,13 +51,13 @@ export default class Touxiang extends Component {
     }
 
     render() {
-        console.log(this.state.arr[0].Uimage);
+        console.log(this.state.arr[0].uimage);
         return (
             <div>
-                <NavBar mode="dark" icon={<Icon type="left" onClick={()=>{this.props.history.push('myedit')}}/>} rightContent={<label for="addFile"><b>. . .</b></label>} style={{background:'#617ca6',color:'#fff'}}>头 像</NavBar>
+                <NavBar mode="dark" icon={<Icon type="left" onClick={()=>{this.props.history.push('myedit')}}/>} rightContent={<label for="addFile"><b>. . .</b></label>} style={{background:'black',color:'#fff'}}>头 像</NavBar>
                 
-                <div style={{width:'100%',height:'100vh',background:'#000',position:'fixed'}}>
-                    <img src={"https://yf.htapi.pub/head/"+this.state.arr[0].Uimage} style={{width:'100%',height:'100vw',position:'fixed',
+                <div style={{width:'100%',height:'100vh',background:'white',position:'fixed'}}>
+                    <img src={"http://localhost:3000/head/"+this.state.arr[0].uimage+'.jpg'} style={{width:'100%',height:'100vw',position:'fixed',
                             top: '50%',transform: 'translate(0, -50%)'
                     }}/>
                 </div>

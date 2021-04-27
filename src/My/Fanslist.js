@@ -39,7 +39,7 @@ export default class Fanslist extends Component {
         let list =  this.state.data;
         console.log(index);
         for(var i=0;i<list.length;i++){
-            if(list[i].Uid == index.Uid){
+            if(list[i].uid == index.uid){
                 console.log(list[i]);
                 if(list[i].attention){
                     alert('取消关注?','',[
@@ -51,7 +51,7 @@ export default class Fanslist extends Component {
                         {
                             text:'确认',
                             onPress:()=>{
-                                this.$api.delattention({deluid:list[i].Uid}).then(res=>{
+                                this.$api.delattention({deluid:list[i].uid}).then(res=>{
                                     console.log('取消关注')
                                     this.$api.fanslist().then(res=>{
                                         this.setState({data:res.data.data})
@@ -62,7 +62,7 @@ export default class Fanslist extends Component {
                     ])
                     break;
                 }else{
-                    this.$api.attention({uid:list[i].Uid}).then(res=>{
+                    this.$api.attention({uid:list[i].uid}).then(res=>{
                         console.log('关注');
                         this.$api.fanslist().then(res=>{
                             this.setState({data:res.data.data})
@@ -115,7 +115,7 @@ export default class Fanslist extends Component {
                 <List>
                     {this.state.data.map((item,index)=>{
                         return(
-                            <Link to={'/Userinfo?uid='+item.Uid}>
+                            // <Link to={'/Userinfo?uid='+item.Uid}>
                             <List.Item 
                             className='items'
                             onClick={()=>{console.log("无")}} 
@@ -132,18 +132,18 @@ export default class Fanslist extends Component {
                             >
 
                                 <List.Item.Brief>
-                                    <img src={"https://yf.htapi.pub/head/" + item.Uimage} style={{
+                                    <img src={"http://localhost:3000/head/" + item.uimage+'.jpg'} style={{
                                     borderRadius:'50%',
                                     height:'64px',
                                     width:'64px',
                                     border:'1px solid #ddd'
                                 }} />
-                                <span className={item.Vip?'vipName':'name'}>{item.Uname}</span>
-                                <span className='signature'>{item.Signature.length>=15?item.Signature.substring(0,15)+'...':item.Signature}</span>
+                                <span className='name'>{item.uname}</span>
+                                <span className='signature'>{item.signature.length>=15?item.signature.substring(0,15)+'...':item.signature}</span>
                                 </List.Item.Brief>
                                 
                             </List.Item>
-                            </Link>
+                            // </Link>
                         )
                     })} 
                 </List>

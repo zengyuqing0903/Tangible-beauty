@@ -34,23 +34,48 @@ export default class Signature extends Component {
     }
     render() {
         return (
+            
             <div className="sig-body">
-                <div className='sig-top'>
-                    <Link
-                    style={{
-                        color:"white"
-                    }}
-                    to="/home/my" 
-                    id='sig-back' 
-                    onClick={this.back}>返回</Link>
-                    <span>编辑个签</span>
-                    <Link 
-                    style={{
-                        color:"white"
-                    }}
-                    to="/home/my"  
-                    id='sig-pub' 
-                    onClick={this.publish}>发布</Link>
+                <div style={{
+                    height:'50px',
+                    width:'100%',
+                    backgroundColor:'#fff',
+                    boxShadow:'2px 2px 2px #888888',
+                    fontSize:'18px',
+                    textAlign:'center',
+                    lineHeight:'50px',
+                    position:'relative'
+                    }}>
+                        {/* <Link to='/home/my'> */}
+                         <i className="icon-fanhui iconfont"
+                            style={{                                                                  
+                                fontSize:'1.2em',
+                                width:"10%",
+                                float:'left',
+                                color:"grey",
+                            }}
+                            onClick={this.back}
+                        />
+                        编辑个签
+                        <Link 
+                            style={{
+                                color:"gray"
+                            }}
+                            to="/home/my"  
+                            style={{
+                                width:'50px',
+                                height:'40px',
+                                borderRadius:'15px',
+                                // backgroundColor:'grey',
+                                color:'grey',
+                                position:'absolute',
+                                top:'0px',
+                                right:'20px'
+
+                            }} 
+                            onClick={this.publish}>发布
+                        </Link>
+                        
                 </div>
                 <div className="sig-edit">
                     <List>

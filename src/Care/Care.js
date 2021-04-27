@@ -69,8 +69,8 @@ export default class Care extends Component {
                 <div className="home-body">
                 <div style={{ display: 'flex',flexWrap:" wrap" ,alignItems: 'center', justifyContent: 'center', height: '420px'}}>
                                 {this.state.data.map((val)=> (                           
-                                    <Link to={"/Home/content/"+val.pid}>
-                                    {/* <Link to={"/contonent/"+val.Tid} style={{color:"white"}}> */}
+                                    // <Link to={"/home/contonent/"+val.pid}>
+                                    <Link to={"/content/"+val.pid} style={{color:"white"}}>
 
                                     <div key={val} className="home-block">  
                                         <img src={"http://localhost:3000/image/"+val.pimage+".jpg"} alt="" className="home-bacimg"/>

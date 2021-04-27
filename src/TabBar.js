@@ -5,7 +5,7 @@ import 'antd-mobile/dist/antd-mobile.css';
 import Home from './Home/Home';
 import Care from './Care/Care';
 import Addressee from './New/Addressee';
-import LetterBox from './LetterBox/LetterBox';
+// import LetterBox from './LetterBox/LetterBox';
 import My from './My/My';
 
 

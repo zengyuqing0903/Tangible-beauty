@@ -10,8 +10,8 @@ import My from './My/My'
 import Collection from './My/Collection'
 import Setting from './My/Setting'
 import Recover from './My/Recover'
-import LetterBox from './LetterBox/LetterBox'
-import Letter from './LetterBox/Letter'
+// import LetterBox from './LetterBox/LetterBox'
+// import Letter from './LetterBox/Letter'
 import Message from './My/Message'
 import Myedit from './My/Myedit'
 import Changename from './My/Changename'
@@ -30,7 +30,7 @@ import Cropimg from './My/Cropimg'
 
 import api from './request/api';
 import store from './redux/store';
-import Collecletter from './My/Collecletter'
+// import Collecletter from './My/Collecletter'
 import Mysig from './My/Signature'
 import Vip from './My/Vip'
 import Myorder from './My/Myorder'
@@ -45,7 +45,7 @@ import Sharelist from './My/Sharelist'
 import Inviteconfirm from './My/Inviteconfirm'
 
 import Care from './Care/Care'
-import Contonent from './Care/Contonent'
+// import Contonent from './Care/Contonent'
 import Content from './Home/Content'
 
 
@@ -68,11 +68,11 @@ ReactDOM.render(
             <Route path="/recover" component={Recover} />
             <Route path="/setting" component={Setting}/>
             <Route path='/collection' component={Collection}/>
-            <Route path="/letterbox" component={LetterBox} />
+            {/* <Route path="/letterbox" component={LetterBox} /> */}
             <Route path='/my' component={My} />
             <Route path="/login" component={Login} />
-            <Route path="/letter/:id" component={Letter} />
-            <Route path="/collecletter/:id" component={Collecletter} />
+            {/* <Route path="/letter/:id" component={Letter} /> */}
+            {/* <Route path="/collecletter/:id" component={Collecletter} /> */}
             <Route path="/mymessage" component={Message} />
             <Route path="/myedit" component={Myedit} />
             <Route path="/changename" component={Changename} />
@@ -106,9 +106,9 @@ ReactDOM.render(
             <Route exact path='/content/:id' component={Content}/>
 
             {/* 关注 */}
-            <Route exact path='/care' component={Care}/>
-            <Route exact path='/contonent' component={Contonent}/>
-            <Route exact path='/contonent/:id' component={Contonent}/>
+            <Route exact path='/home/care' component={Care}/>
+            {/* <Route exact path='/contonent' component={Contonent}/> */}
+            {/* <Route exact path='/contonent/:id' component={Contonent}/> */}
             {/* 新建 */}
             <Route path="/addressee" component={Addressee} />
 

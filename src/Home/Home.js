@@ -200,35 +200,13 @@ export default class Home extends Component {
                                                 <div className="home-btm-right" onClick={()=>{this.onAttention(val)}}>
                                                     <span>关注</span>
                                                 </div>
-                                                {/* <Button 
-                                                    type="ghost" 
-                                                    size="small" 
-                                                    // onClick={this.onAttention.bind(index,item,this)} 
-                                                    className='home-btm-right' 
-                                                    inline 
-                                                    activeStyle={{color:'grey'}}
-                                                    >
-                                                    {/* {item.attention?'互相关注':'已关注'} */}
-                                                {/* </Button>  */}
                                             </div>                            
                                         </div>
-                                                            
-                                        {/* <img src={"https://yf.htapi.pub/theme/"+val.Timage} alt="" className="home-bacimg"/> */}
+                      
                                     </div>
                                 ))}
                             </div>
-                            {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '450px', backgroundColor: '#fff' }}>
-                                美食
-                            </div> */}
-                            {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '450px', backgroundColor: '#fff' }}>
-                                穿搭
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '450px', backgroundColor: '#fff' }}>
-                                健身
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '450px', backgroundColor: '#fff' }}>
-                                旅行
-                            </div> */}
+                            
                         
                         </Tabs>
                         <WhiteSpace />      

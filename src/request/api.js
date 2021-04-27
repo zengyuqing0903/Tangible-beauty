@@ -18,19 +18,29 @@ const api = {
     search:p=>get('featured/search',p),
     //关注
     attentionWorks:p=>get('featured/attentionWorks',p),
+    //发布
+    addimage:p => post('publish/putImg',p),
     //我的页面
     mine:p=>get('mine/',p),
     getfans:p=>get('mine/fans',p),
     getattention:p=>get('mine/attentions',p),
+    compositionlist:p=>get('mine/compositionlist',p),
+    likelist:p=>get('mine/likelist',p),
+    collectlist:p=>get('mine/collectlist',p),
+    delattention:p=>post('mine/delattention',p),
+    attentionlist:p=>get('mine/attentionlist',p),
+    fanslist:p=>get('mine/fanslist',p),
+    changeSignature : p=>post('mine/changeSignature',p),//修改个性签名
+    changepwd:p => post('mine/changepwd',p),
+    getoldpwd: p => get('mine/getoldpwd',p),
+    changename : p => post('mine/changename',p),
 
     isfollow:p=>get('featured/isattention',p),
     islike:p=>get('featured/islike',p),
+    headimg: p => post('publish/head',p),
+    changehead:p=>post('publish/changehead',p),
 
 
-
-
-    
-    headimg: p => post('image/head',p),
 
     // // lxc
     mailbox: p => get('mailbox',p),
@@ -47,17 +57,13 @@ const api = {
     restore:p => post('mine/recyclebin/restore',p),
     changepwd:p => post('mine/changepwd',p),
     getoldpwd: p => get('mine/getoldpwd',p),
-    headimg:p => post('image/head',p),
-    changehead:p=>post('image/changehead',p),
+    // headimg:p => post('image/head',p),
+    // changehead:p=>post('image/changehead',p),
     searchmail : p => get('mailbox/searchmail',p),
     setgrade:p=>post('mine/setgrade',p),
     getgrade:p=>get('mine/getgrade',p),
     attention:p=>post('mine/attention',p),
-    delattention:p=>post('mine/delattention',p),
 
- 
-    attentionlist:p=>get('mine/attentionlist',p),
-    fanslist:p=>get('mine/fanslist',p),
     myself:p=>get('mine/myself',p),
     openlist:p=>get('mine/openlist',p),
 
@@ -77,7 +83,7 @@ const api = {
     addletter:p=>post('together/theme/writeletter',p),
     showletter:p=>get('together/theme/show',p),
     changeletter:p=>post('together/theme/edit',p),
-    addimage:p => post('image/theme',p),
+    // addimage:p => post('image/theme',p),
     insertTImg:p => post('image/insertTimg',p),//插入图片
     showTImg:p => get('image/showTimg',p),//展示图片
     delInsertTimg:p => post('image/delInsertTimg',p),//删除图片
